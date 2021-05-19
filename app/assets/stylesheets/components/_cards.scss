@@ -32,3 +32,41 @@
 .card-small .card-small-info {
   padding: 16px;
 }
+
+// Large card style
+
+.card-large {
+  overflow: hidden;
+  height: 240px;
+  width: 480px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.card-large h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-large p {
+  font-size: 16px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 16px;
+}
+
+.card-large {
+  padding: 8px;
+}
+
+.card-large-info {
+  background-color: white;
+  margin-left: px;
+  padding: 16px 8px;
+}
+
+
