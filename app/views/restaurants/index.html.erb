@@ -1,0 +1,25 @@
+<div class="wrapper">
+
+  <div class="top">
+    <h1>All Restaurants</h1>
+  </div>
+
+  <div class="middle">
+    <div class="cards">
+      <% @restaurants.each do |restaurant| %>
+        <div class="card-small">
+          <%= image_tag "https://source.unsplash.com/200x200/?#{restaurant.category}-restaurant" %>
+          <div class="card-small-info">
+            <h2><%= restaurant.name %></h2>
+            <p><em><%= restaurant.category %>&nbsp; // &nbsp;<%= restaurant.phone_number %></em></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="bottom">
+
+  </div>
+
+</div>
