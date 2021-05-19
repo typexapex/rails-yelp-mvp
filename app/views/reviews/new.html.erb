@@ -1,7 +1,5 @@
 <div class="wrapper">
-  <div class="top">
     <h1>Add a Review for <%= @restaurant.name %></h1>
-  </div>
   <div class="middle">
     <%= simple_form_for [@restaurant, @review] do |f| -%>
       <%= f.input :content %>
@@ -9,7 +7,5 @@
       <%= f.submit 'Add', class: 'btn btn-success mt-2' %>
     <% end -%>
   </div>
-  <div class="bottom">
     <%= link_to 'Back', restaurant_path(@restaurant), class: 'btn btn-success' %>
-  </div>
 </div>

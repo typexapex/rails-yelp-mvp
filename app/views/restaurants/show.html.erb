@@ -1,14 +1,13 @@
 <div class="wrapper">
-  <div class="top"></div>
   <div class="middle">
-    <div class="card-large" style="background-image: url('https://source.unsplash.com/400x400/?#{@restaurant.category}-restaurant');">
+    <div class="card-large" style="background-image: url('https://source.unsplash.com/600x600/?#{@restaurant.category}-restaurant');">
       <div class="card-large-info">
         <h2><%= @restaurant.name %></h2>
         <p><%= @restaurant.address %></p>
         <p><em><%= @restaurant.category %>&nbsp; // &nbsp;<%= @restaurant.phone_number %></em></p>
       </div>
     </div>
-    <%= link_to 'Leave a Review', new_restaurant_review_path(@restaurant), class: 'btn btn-success' %>
+    <%= link_to 'Leave a Review', new_restaurant_review_path(@restaurant), class: 'btn btn-danger' %>
     <div class="reviews">
       <ul class="list-group">
         <% @restaurant.reviews.each do |review| %>
@@ -17,7 +16,5 @@
       </ul>
     </div>
   </div>
-  <div class="bottom">
-    <%= link_to 'Back', restaurants_path, class: 'btn btn-success' %>
-  </div>
+
 </div>

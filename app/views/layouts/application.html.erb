@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsYelpMvp</title>
+    <title>Squawk - Totally Not Yelp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,34 @@
   </head>
 
   <body>
+    <div class="top">
+      <nav class="navbar navbar-dark bg-danger">
+        <div class="container">
+          <form class="container-fluid d-flex justify-content-between">
+          <a class="navbar-brand">
+            <img src="https://images.unsplash.com/photo-1603708637737-46b28c82a618?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" width="30" height="30" style="border-radius: 50%; border: 2px solid white;"> Squawk - Totally Not Yelp
+          </a>
+            <%= link_to 'All Restaurants', restaurants_path, class: 'btn btn-outline-light' %>
+          </form>
+        </div>
+      </nav>
+    </div>
+
     <%= yield %>
+
+    <div class="bottom">
+      <div class="footer">
+        <div class="footer-links">
+          <a href="#"><i class="fas fa-hippo"></i></a>
+          <a href="#"><i class="fas fa-frog"></i></a>
+          <a href="#"><i class="fas fa-fish"></i></a>
+          <a href="#"><i class="fas fa-dragon"></i></a>
+          <a href="#"><i class="fas fa-crow"></i></a>
+        </div>
+        <div class="footer-copyright">
+          <p>These are just animals...</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
