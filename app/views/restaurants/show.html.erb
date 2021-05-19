@@ -8,11 +8,11 @@
         <p><em><%= @restaurant.category %>&nbsp; // &nbsp;<%= @restaurant.phone_number %></em></p>
       </div>
     </div>
-    <%= link_to 'Leave a Review', new_restaurant_review_path, class: 'btn btn-success' %>
+    <%= link_to 'Leave a Review', new_restaurant_review_path(@restaurant), class: 'btn btn-success' %>
     <div class="reviews">
       <ul class="list-group">
-        <% @restaurant.review.each do |review| %>
-          <li class="list-group-item"><%= review.content %></li>
+        <% @restaurant.reviews.each do |review| %>
+          <li class="list-group-item"><%= review.content %> &nbsp;// &nbsp;<%= review.rating %>/5</li>
         <% end %>
       </ul>
     </div>
